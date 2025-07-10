@@ -40,7 +40,7 @@ As informações dos usuários (nome, senha, PIN, saldo, histórico e número de
 
 ⚠️ Aviso
 
-Este é um simulador educacional. Nenhum dado é realmente processado, transferido ou criptografado. Não utilize senhas reais.
+Este é apenas um simulador. Nenhum dado é realmente processado, transferido ou criptografado. Não utilize senhas reais.
 
 📌 Tecnologias Utilizadas
 
