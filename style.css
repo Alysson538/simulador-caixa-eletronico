@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff00;
+  text-align: center;
+  width: 320px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  width: 90px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00cc00;
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+#historico-container {
+  margin-top: 25px;
+  text-align: left;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#historico-container h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #00ff00;
+  font-size: 16px;
+}
+
+#historico-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+#historico-lista li {
+  margin-bottom: 6px;
+  color: #cccccc;
+  font-size: 14px;
+}

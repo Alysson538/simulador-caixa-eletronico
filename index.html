@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Caixa Eletrônico</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Simulador de Caixa Eletrônico</h1>
+  <div id="cadastro-container" class="container">
+    <h2>Cadastro</h2>
+    <input type="text" id="novoUsuario" placeholder="Nome de usuário" />
+    <input type="password" id="novaSenha" placeholder="Senha" />
+    <input type="password" id="novoPin" placeholder="PIN (4 dígitos)" maxlength="4" />
+    <button onclick="cadastrarUsuario()">Cadastrar</button>
+    <p>Já tem uma conta? <a href="#" onclick="mostrarLogin()">Fazer login</a></p>
+  </div>
+
+  <div id="login-container" class="container" style="display: none;">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário" />
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="fazerLogin()">Entrar</button>
+    <p><a href="#" onclick="recuperarSenha()">Esqueceu a senha? Recupere</a></p>
+    <p>Não tem conta? <a href="#" onclick="mostrarCadastro()">Criar conta</a></p>
+  </div>
+
+  <div id="caixa-container" class="container" style="display: none;">
+    <h2>Bem-vindo, <span id="userLogado"></span></h2>
+    <p id="saldo">Saldo: R$ 0.00</p>
+    <p>Cartão: <span id="cartao-numero"></span></p>
+    <input type="number" id="valor" placeholder="Digite o valor" />
+    <input type="password" id="pin" placeholder="PIN de 4 dígitos" maxlength="4" />
+    <div class="botoes">
+      <button onclick="depositar()">Depositar</button>
+      <button onclick="sacar()">Sacar</button>
+      <button onclick="transferir()">Transferir</button>
+      <button onclick="gerarExtrato()">Extrato (PDF)</button>
+      <button onclick="sair()">Sair</button>
+    </div>
+    <p id="mensagem"></p>
+    <div id="historico-container">
+      <h3>Histórico</h3>
+      <ul id="historico-lista"></ul>
+    </div>
+    <p id="agradecimento" style="font-weight: bold; color: green; display: none;">Obrigado por usar o simulador de caixa eletrônico!</p>
+  </div>
+</body>
+</html>
