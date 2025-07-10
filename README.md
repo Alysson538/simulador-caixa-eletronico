@@ -1,7 +1,9 @@
 🏦 Simulador de Caixa Eletrônico
+
 Este é um projeto de simulador de caixa eletrônico desenvolvido em HTML, CSS e JavaScript, com armazenamento local (localStorage). Ele permite que usuários criem contas, façam operações bancárias simuladas e acompanhem um histórico de transações.
 
 📋 Funcionalidades
+
 ✅ Cadastro de usuário (nome, senha e PIN)
 
 ✅ Login com nome de usuário e senha
@@ -29,15 +31,19 @@ Este é um projeto de simulador de caixa eletrônico desenvolvido em HTML, CSS e
 ✅ Botões de sair e mensagens de agradecimento
 
 🖼️ Interface
+
 A interface é simples, responsiva e interativa, baseada em HTML e CSS. O uso de JavaScript puro facilita a manipulação do DOM e das lógicas de operação.
 
 💾 Armazenamento
+
 As informações dos usuários (nome, senha, PIN, saldo, histórico e número de cartão) são armazenadas no navegador, via localStorage. Não há backend.
 
 ⚠️ Aviso
+
 Este é um simulador educacional. Nenhum dado é realmente processado, transferido ou criptografado. Não utilize senhas reais.
 
 📌 Tecnologias Utilizadas
+
 HTML5
 
 CSS3
@@ -47,4 +53,5 @@ JavaScript (Vanilla)
 jsPDF para exportar o extrato em PDF
 
 👨‍💻 Autor
+
 Desenvolvido por João Alysson
